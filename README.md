@@ -34,7 +34,7 @@ Tool for indexing and storing TON blockchain activity into a PostgreSQL database
    > psql -U \<postgres-user\> -w -d \<postgresql-db\> -f ./create_db.sql
 
 ## Docker setup
-There was a docker file somewhere for it, just a link should be enough
+Please refer to [this Dockerfile](https://github.com/Blockchair/ton-indexer/blob/main/Dockerfile).
 
 ## Usage
 There is a convenience shell script that enforces database/tables existence before passing all provided arguments to the indexer. You can modify it or set corresponding environment variables
@@ -76,3 +76,9 @@ Finally invoke with
 > ./transaction-tester full-hex-string-of-the-transaction
 
 This is executed locally and does not require database
+
+## License
+
+TON Indexer is released under the terms of the MIT license. See [LICENSE.md](https://github.com/Blockchair/ton-indexer/blob/main/LICENSE.md) for more information.
+
+By contributing to this repository, you agree to license your work under the MIT license unless specified otherwise at the top of the file itself. Any work contributed where you are not the original author must contain its license header with the original author and source.
